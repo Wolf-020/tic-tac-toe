@@ -12,13 +12,14 @@ open tictactoe.html
 
 ## Git & GitHub workflow
 
-Every meaningful change must be committed with a clean message and pushed to GitHub.
+**Commit and push after every meaningful unit of work** — a feature added, a bug fixed, a refactor completed. Never leave a session with uncommitted changes. GitHub is the source of truth and the safety net for reverting if something breaks.
 
 - Remote: `git@github.com:Wolf-020/tic-tac-toe.git` (SSH via `~/.ssh/github_key`)
 - Branch: `main`
 - Stage specific files — never `git add -A`
 - Commit messages: imperative subject line (`Add X`, `Fix Y`, `Refactor Z`), body explaining why if non-obvious
-- Always push after committing: `git push origin main`
+- Always push immediately after committing: `git push origin main`
+- For multi-step tasks, commit at each logical checkpoint rather than once at the end
 
 ## Code architecture
 
